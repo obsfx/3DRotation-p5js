@@ -82,11 +82,6 @@ function draw() {
         rotated = rotationX.multiply(rotated);
         rotated = rotationZ.multiply(rotated);
         
-        let z = 1 / (distance - rotated.matrix[2][0]);
-
-        projection.matrix[0][0] = z;
-        projection.matrix[1][1] = z;
-
         let projected2D = convertXY(projection.multiply(rotated), cubeW);
         projected.push(projected2D);
         
