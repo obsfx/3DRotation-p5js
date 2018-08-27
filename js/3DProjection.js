@@ -1,7 +1,5 @@
 let cubeW = 100;
 
-let distance = 3;
-
 let angle = 0.01;
 let deltaAngle = 0.025;
 
